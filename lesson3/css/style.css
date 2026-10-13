@@ -92,6 +92,7 @@ ul li {
 
 ul li::before {
     content: url(../img/check.png);
+    /* content: '🤩'; */
     margin-right: 4px;
     vertical-align: middle;
 }
