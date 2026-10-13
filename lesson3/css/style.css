@@ -96,3 +96,26 @@ ul li::before {
     margin-right: 4px;
     vertical-align: middle;
 }
+
+ol {
+    border: 10px solid #ffc43d;
+    /* padding: 20px 40px 20px; */
+    padding: 20px 40px;
+}
+
+ol li {
+    /* pb20 */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background: url(../img/arrow.png) no-repeat left bottom;
+}
+
+ol li:last-of-type {
+    /* pb0 */
+    padding-bottom: 0;
+    /* mb0 */
+    margin-bottom: 0;
+    /* bg 背景色をtransparent(透明)にする*/
+    /* background の他のプロパティ値はすべてリセットされている */
+    background: transparent;
+}

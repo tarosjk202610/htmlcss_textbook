@@ -1,3 +1,5 @@
 {
-  "gitdoc.autoPushDelay": 300000
+  "gitdoc.autoPushDelay": 30000,
+  "gitdoc.autoCommitDelay": 60000,
+  "gitdoc.enabled": true
 }
