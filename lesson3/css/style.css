@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* HTMLの基本～セクションを作る */
+section {
+    background-color: #3eb6bd;
+}
+
+h1 {
+    color: #000;
+}
+
+em {
+    font-weight: bold;
+}
+
+/* img {
+    max-width: 100%;
+    width: 300px;
+    width: 100%;
+} */
+
+/* HTMLの基本～セクションを作る👆ここまで */
+
+/* 画像の配置とさまざまな単位 */
+.apply-object-fit {
+    object-fit: cover;
+}
+
+/* 画面最小幅から最大480pxまでは👇のCSSを適用する */
+@media screen and (max-width:480px) {
+    section {
+        background-color: #f43e10;
+    }
+}
+
+/* 画像の配置とさまざまな単位👆ここまで */
+
+
+a {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+    padding: 1em;
+    text-align: center;
+}
+
+a.text-link {
+    color: #008000;
+    text-decoration: underline;
+}
+
+a.button-link {
+    background: #ffd700;
+    text-decoration: none;
+    color: #ff4500;
+    font-size: 20px;
+}
+
+a.button-link2 {
+    background: #1e90ff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid #191970;
+}
+
+a.button-link2:active {
+    border-bottom: none;
+    transform: translateY(4px);
+}
+
+/* 画面最大幅から最小960pxまでは👇のCSSを適用する */
+@media screen and (min-width:960px) {
+    a:hover {
+        opacity: 0.7;
+    }
+}
+
+/* リストを作る（途中まで） */
+
+ul {
+    border: 10px solid #aae5e7;
+    padding: 1em 1em 0;
+    list-style: none;
+}
+
+ul li {
+    border-bottom: 4px dotted #6baeb3;
+    margin-bottom: 1em;
+}
+
+ul li::before {
+    content: url(../img/check.png);
+    margin-right: 4px;
+    vertical-align: middle;
+}
